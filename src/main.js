@@ -24,6 +24,7 @@ formEl.addEventListener('submit', e => {
       maxWidth: `432px`,
     });
     galImg.innerHTML = '';
+    inpSearch.value = '';
     return;
   }
   showLoader();
