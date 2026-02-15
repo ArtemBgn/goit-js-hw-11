@@ -4,7 +4,6 @@ import {
   clearGallery,
   showLoader,
   hideLoader,
-  galImg,
 } from './js/render-functions';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
@@ -23,7 +22,7 @@ formEl.addEventListener('submit', e => {
       position: `topRight`,
       maxWidth: `432px`,
     });
-    galImg.innerHTML = '';
+    clearGallery();
     inpSearch.value = '';
     return;
   }
