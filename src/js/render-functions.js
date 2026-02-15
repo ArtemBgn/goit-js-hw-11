@@ -33,7 +33,6 @@ export function createGallery(images) {
   const markup = images
     .map(
       item => `<li class="gallery-item">
-            <div class="gallery-item-block">
               <a class="gallery-link" href="${item.largeImageURL}"
                 ><img
                   class="gallery-image"
@@ -58,7 +57,6 @@ export function createGallery(images) {
                   <p class="gallery-data-value">${item.downloads}</p>
                 </li>
               </ul>
-            </div>
           </li>`
     )
     .join('');
@@ -67,16 +65,13 @@ export function createGallery(images) {
 }
 
 export function clearGallery() {
-  //очищає галерею
   galImg.innerHTML = '';
 }
 
 export function showLoader() {
-  //додає клас для відображення лоадера
   sniper.style.display = 'block';
 }
 
 export function hideLoader() {
-  //видаляє клас для відображення лоадера
   sniper.style.display = 'none';
 }

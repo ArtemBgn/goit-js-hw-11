@@ -24,7 +24,6 @@ formEl.addEventListener('submit', e => {
       maxWidth: `432px`,
     });
   }
-  // showLoader();
   clearGallery();
   getImagesByQuery(query)
     .then(createGallery)
@@ -36,5 +35,4 @@ formEl.addEventListener('submit', e => {
     )
     .finally(hideLoader);
   inpSearch.value = '';
-  // hideLoader();
 });
